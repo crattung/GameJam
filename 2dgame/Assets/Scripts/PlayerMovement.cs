@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float movementspeed = 5f;
     private Rigidbody2D rb; //making them private cus they wont be accessed through outside code not inspector
     private Animator animator; // same ^
+    private Camera _mainCam;
 
 
     Vector2 movement;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        _mainCam = Camera.main;
     }
 
 
@@ -28,9 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(animator)//checks if animator is assigned/found using getcomponent
         {
-            animator.SetFloat("horizontal", movement.x);
-            animator.SetFloat("vertical", movement.y);
-            animator.SetFloat("speed", movement.sqrMagnitude);
+            
+            //animator.SetFloat("horizontal", movement.x);
+            //animator.SetFloat("vertical", movement.y);
+            //animator.SetFloat("speed", movement.sqrMagnitude);
+            animator.SetBool("Walking", movement.sqrMagnitude > 0);
         }
 
 

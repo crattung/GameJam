@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: 9e741eb8451b1c346903e4df133673a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6277893174257034238
+    second: player animation without stick_0
+  - first:
+      213: -229845812557398168
+    second: player animation without stick_1
+  - first:
+      213: -7990392743061616192
+    second: player animation without stick_2
+  - first:
+      213: -8286596542180857034
+    second: player animation without stick_3
+  - first:
+      213: -374983562367461973
+    second: player animation without stick_4
+  - first:
+      213: 6241411860741531863
+    second: player animation without stick_5
+  - first:
+      213: -9114042570800030722
+    second: player animation without stick_6
+  - first:
+      213: -7234692627939872699
+    second: player animation without stick_7
+  - first:
+      213: 8226038616054906172
+    second: player animation without stick_8
+  - first:
+      213: 795123061835874256
+    second: player animation without stick_9
+  - first:
+      213: -7258985827274556303
+    second: player animation without stick_10
+  - first:
+      213: -3384974053449194812
+    second: player animation without stick_11
+  - first:
+      213: 5859577976990815855
+    second: player animation without stick_12
+  - first:
+      213: -9180603413640728778
+    second: player animation without stick_13
+  - first:
+      213: 6472757043446015238
+    second: player animation without stick_14
+  - first:
+      213: 9198436277495512086
+    second: player animation without stick_15
+  - first:
+      213: -2045481944139378198
+    second: player animation without stick_16
+  - first:
+      213: 987925828101567485
+    second: player animation without stick_17
+  - first:
+      213: -6160305812059316328
+    second: player animation without stick_18
+  - first:
+      213: 738614014213474498
+    second: player animation without stick_19
+  - first:
+      213: 6596010598230658363
+    second: player animation without stick_20
+  - first:
+      213: -1708736146998437775
+    second: player animation without stick_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player animation without stick_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 518
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c5f827b6170e8a0800000000000000
+      internalID: -6277893174257034238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 518
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fb765837c6fccf0800000000000000
+      internalID: -229845812557398168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 518
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c904f5922c6c1190800000000000000
+      internalID: -7990392743061616192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_3
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 518
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b64526958100d80800000000000000
+      internalID: -8286596542180857034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_4
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 518
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba51a70df6acbcaf0800000000000000
+      internalID: -374983562367461973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 390
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8a868d403fd9650800000000000000
+      internalID: 6241411860741531863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_6
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 390
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb1da3f19a648180800000000000000
+      internalID: -9114042570800030722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_7
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 390
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540b18cc265399b90800000000000000
+      internalID: -7234692627939872699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 390
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d3992b982c82270800000000000000
+      internalID: 8226038616054906172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_9
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 392
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfb2754638d80b00800000000000000
+      internalID: 795123061835874256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 264
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c74bf89d6e24b90800000000000000
+      internalID: -7258985827274556303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_11
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 264
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c22f3268082601d0800000000000000
+      internalID: -3384974053449194812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_12
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 264
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f665d3cef17615150800000000000000
+      internalID: 5859577976990815855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_13
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 264
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fa43216d1f79080800000000000000
+      internalID: -9180603413640728778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 264
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605e104ac3ad3d950800000000000000
+      internalID: 6472757043446015238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_15
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 136
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cbf291f0967af70800000000000000
+      internalID: 9198436277495512086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_16
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 136
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1d81d520dfc93e0800000000000000
+      internalID: -2045481944139378198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_17
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 136
+        width: 44
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df37d607e41d5bd00800000000000000
+      internalID: 987925828101567485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_18
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 134
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f1e6ca082328aa0800000000000000
+      internalID: -6160305812059316328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_19
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 134
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8c1575885104a00800000000000000
+      internalID: 738614014213474498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d004221bcb98b50800000000000000
+      internalID: 6596010598230658363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player animation without stick_21
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 6
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178d94f07895948e0800000000000000
+      internalID: -1708736146998437775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
