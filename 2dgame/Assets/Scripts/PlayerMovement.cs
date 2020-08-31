@@ -31,9 +31,9 @@ public class PlayerMovement : MonoBehaviour
         if(animator)//checks if animator is assigned/found using getcomponent
         {
             
-            //animator.SetFloat("horizontal", movement.x);
-            //animator.SetFloat("vertical", movement.y);
-            //animator.SetFloat("speed", movement.sqrMagnitude);
+            animator.SetFloat("horizontal", movement.x);
+            animator.SetFloat("vertical", movement.y);
+            animator.SetFloat("speed", movement.sqrMagnitude);
             animator.SetBool("Walking", movement.sqrMagnitude > 0);
         }
 
