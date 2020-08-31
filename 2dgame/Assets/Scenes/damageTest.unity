@@ -763,10 +763,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78ea45a2bda01543b5d800aabe08ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  enemy: {fileID: 182351331}
+  spawnpersec: 3
+=======
   enemies: []
   spawnPoints: []
   spawnInterval: 1
   enemiesUnlocked: 1
+>>>>>>> 047d11cc4d2d8410bad09c0205ffd2fd91b9e3de
 --- !u!4 &804326538
 Transform:
   m_ObjectHideFlags: 0
@@ -775,7 +780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804326536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9645238, y: -0.11653673, z: -1.5019042}
+  m_LocalPosition: {x: -0.17, y: -0.11653673, z: -1.5019042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
