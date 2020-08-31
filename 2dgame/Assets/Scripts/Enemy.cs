@@ -11,10 +11,13 @@ public class Enemy : MonoBehaviour
     private float _moveSpeed = 6f;
     [SerializeField]
     private float _hitDistance = 2f;
+    [SerializeField]
+    private float _hitInterval = 2f;
 
-    private Transform _player;
+    private Health _playerHealth;
     private Health _health;
     private Rigidbody2D _rb;
+    private float _hitTime;
     void Start()
     {
         _health = GetComponent<Health>();
@@ -22,8 +25,8 @@ public class Enemy : MonoBehaviour
 
         _rb = GetComponent<Rigidbody2D>();
 
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
-        if(!_player)
+        _playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+        if(!_playerHealth)
             Debug.LogError("No player with tag \"Player\" found");
 
     }
@@ -37,12 +40,23 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        //_rb.velocity = Vector2.zero;
-        var diff = (_player.position - transform.position);
-        if(_hitDistance < diff.magnitude)
+        if(_playerHealth)
         {    
-            var dir = (Vector2)diff.normalized;
-            _rb.MovePosition((Vector2)transform.position + (_moveSpeed * dir * Time.fixedDeltaTime));
+            //_rb.velocity = Vector2.zero;
+            var diff = (_playerHealth.transform.position - transform.position);
+            if(_hitDistance < diff.magnitude)
+            {    
+                var dir = (Vector2)diff.normalized;
+                _rb.MovePosition((Vector2)transform.position + (_moveSpeed * dir * Time.fixedDeltaTime));
+            }
+            else
+            {
+                if(_hitTime < Time.time)
+                {
+                    _playerHealth.Damage();
+                    _hitTime = Time.time + _hitInterval;
+                }
+            }
         }
     }
 }
