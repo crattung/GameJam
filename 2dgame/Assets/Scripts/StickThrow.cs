@@ -22,9 +22,16 @@ public class StickThrow : MonoBehaviour
 
     void Update()
     {
-        var dir = ((Vector2)(_mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position)).normalized;
+        var dir = Dir();
+
         if(Input.GetButtonDown("Fire1"))
         {    
+            if (_anim)
+            {
+                _anim.SetFloat("horizontal", dir.x);
+                _anim.SetFloat("vertical", dir.y);
+            }
+
             if(_stickThrown)
             {
                 if(Vector2.Distance(transform.position, _stickThrown.position) < pickupDistance)
@@ -35,22 +42,28 @@ public class StickThrow : MonoBehaviour
                 }
             }
             else
-            {
-                var stick = Instantiate(_stickPrefab, transform.position,
-                        Quaternion.Euler(Vector3.forward * (Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90f))) //makes the stick face forward when shot
-                    .GetComponent<Rigidbody2D>();
-                stick.AddForce(dir * throwPower);
-                stick.AddTorque(_rotationSpeed);
-
-                _stickThrown = stick.transform;
-                _anim?.SetBool("HasStick", false);               
+            {                
+                _anim?.SetTrigger("Attack");
             }
         }
-
-        if (_anim)
-        {
-            _anim.SetFloat("horizontal", dir.x);
-            _anim.SetFloat("vertical", dir.y);
-        }
     }
+
+    public void Throw()
+    {
+        if(_stickThrown)
+            return;
+            
+        var dir = Dir();
+        var stick = Instantiate(_stickPrefab, transform.position,
+                Quaternion.Euler(Vector3.forward * (Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90f))) //makes the stick face forward when shot
+            .GetComponent<Rigidbody2D>();
+        stick.AddForce(dir * throwPower);
+        stick.AddTorque(_rotationSpeed);
+
+        _stickThrown = stick.transform;
+        _anim?.SetBool("HasStick", false);       
+
+    }
+
+    private Vector2 Dir() => ((Vector2)(_mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position)).normalized;
 }
