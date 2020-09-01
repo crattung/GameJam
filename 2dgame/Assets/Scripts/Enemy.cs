@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _health = GetComponent<Health>();
-        _health.deathEvent += Dead;
+        _health.deathEvent.AddListener(Dead);
 
         _rb = GetComponent<Rigidbody2D>();
 
@@ -33,8 +33,9 @@ public class Enemy : MonoBehaviour
 
     private void Dead()
     {
-        _health.deathEvent -= Dead;
-        Debug.Log($"{gameObject.name} died.");
+        GameManager.instance.score++;
+        _health.deathEvent.RemoveListener(Dead);
+        //Debug.Log($"{gameObject.name} died.");
         Destroy(gameObject);
     }
 
