@@ -8,8 +8,19 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public int Score {
+        set 
+        { 
+            _score = value; 
+            _currentScoreText.text = _score.ToString();
+        } 
+        get
+        {
+            return _score;
+        }
+    }
 
-    public int score = 0;
+    [SerializeField] private int _score = 0;
     [SerializeField] private Health _playerHealth;
     [SerializeField] private Image _healthBar;
     [SerializeField] private TextMeshProUGUI _currentScoreText;
@@ -40,12 +51,12 @@ public class GameManager : MonoBehaviour
         _gameOverText.SetActive(true);
         //set up score
         var hs = PlayerPrefs.GetInt("highScore", 0);
-        if (score > hs)
+        if (_score > hs)
         {
-            hs = score;
+            hs = _score;
         }
         PlayerPrefs.SetInt("highScore", hs);
-        _scoreText.text = score.ToString();
+        _scoreText.text = _score.ToString();
         _highScoreText.text = hs.ToString();
 
         //_secondaryCam.SetActive(true);

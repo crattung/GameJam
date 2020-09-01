@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
 
     private void Dead()
     {
-        GameManager.instance.score++;
+        GameManager.instance.Score++;
         _health.deathEvent.RemoveListener(Dead);
         //Debug.Log($"{gameObject.name} died.");
         Destroy(gameObject);
