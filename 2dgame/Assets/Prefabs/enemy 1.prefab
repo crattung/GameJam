@@ -121,6 +121,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hitEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &591580498818280194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +142,7 @@ MonoBehaviour:
   _moveSpeed: 2.39
   _hitDistance: 2
   _hitInterval: 2
+  _deathParticlePrefab: {fileID: 4374853236238657037, guid: f715d860b1077db448bb21c7894e06c2, type: 3}
 --- !u!61 &591580498818280204
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float _hitInterval = 2f;
 
+    [SerializeField]
+    private GameObject _deathParticlePrefab;
+
     private Health _playerHealth;
     private Health _health;
     private Rigidbody2D _rb;
@@ -22,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         _health = GetComponent<Health>();
         _health.deathEvent.AddListener(Dead);
+        _health.hitEvent.AddListener(Hit);
 
         _rb = GetComponent<Rigidbody2D>();
 
@@ -37,6 +41,11 @@ public class Enemy : MonoBehaviour
         _health.deathEvent.RemoveListener(Dead);
         //Debug.Log($"{gameObject.name} died.");
         Destroy(gameObject);
+    }
+    private void Hit()
+    {
+        var particle = Instantiate(_deathParticlePrefab, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
+        Destroy(particle.gameObject, particle.main.duration);
     }
 
     void FixedUpdate()

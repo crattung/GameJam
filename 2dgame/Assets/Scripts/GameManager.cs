@@ -39,8 +39,8 @@ public class GameManager : MonoBehaviour
         else
             instance = this;
 
-        //_playerHealth.deathEvent.AddListener(PlayerDeath);
-        //_playerHealth.hitEvent.AddListener(PlayerHit);
+        _playerHealth.deathEvent.AddListener(PlayerDeath);
+        _playerHealth.hitEvent.AddListener(PlayerHit);
     }
 
     // Update is called once per frame
@@ -50,12 +50,13 @@ public class GameManager : MonoBehaviour
         //Destroy(_playerHealth.gameObject);
         _gameOverText.SetActive(true);
         //set up score
-        var hs = PlayerPrefs.GetInt("highScore", 0);
+        var hsSave = $"highScore_{SceneManager.GetActiveScene().name}";
+        var hs = PlayerPrefs.GetInt(hsSave, 0);
         if (_score > hs)
         {
             hs = _score;
         }
-        PlayerPrefs.SetInt("highScore", hs);
+        PlayerPrefs.SetInt(hsSave, hs);
         _scoreText.text = _score.ToString();
         _highScoreText.text = hs.ToString();
 
@@ -65,13 +66,5 @@ public class GameManager : MonoBehaviour
     public void PlayerHit()
     {
         Debug.Log("Player hit");
-    }
-    public void LoadLevel(int level)
-    {
-        SceneManager.LoadScene(level);
-    }
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
