@@ -21,4 +21,6 @@ public class Health : MonoBehaviour
         }
     }
 
+    public int GetHP() => _health;
+
 }

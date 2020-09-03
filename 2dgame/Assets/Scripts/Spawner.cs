@@ -13,7 +13,10 @@ public class Spawner : MonoBehaviour
     public float spawnInterval = 1f;
     float nextspawn = 0.0f;
     [SerializeField] private int enemiesUnlocked = 1;
-    public int EnemiesUnlocked { set { enemiesUnlocked = Mathf.Min(value, enemies.Length); } }
+    public int EnemiesUnlocked { set { enemiesUnlocked = Mathf.Min(value, enemies.Length); } get { return enemiesUnlocked; } }
+
+    //more badge
+    [SerializeField] private Transform _player;
 
 
     // Update is called once per frame
@@ -27,10 +30,21 @@ public class Spawner : MonoBehaviour
             {
                 nextspawn = Time.time + spawnInterval;
                 //randx = Random.Range(-10f, 10f);
-                var wheretospawn = spawnPoints[Random.Range(0, pointCnt)].position;
+                var wheretospawn = SpawnPoint();
                 var enemy = enemies[Random.Range(0, enemiesUnlocked)];
                 Instantiate(enemy, wheretospawn, Quaternion.identity);
             }
         }
+    }
+    Vector2 SpawnPoint()
+    {
+        int i = Random.Range(0, spawnPoints.Length);
+        if(Vector2.Distance(spawnPoints[i].position, _player.position) < 10)
+        {
+            i++;
+            if(i >= spawnPoints.Length)
+                i = 0;
+        }
+        return spawnPoints[i].position;
     }
 }

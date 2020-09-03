@@ -17,10 +17,10 @@ GameObject:
   - component: {fileID: 591580498818280193}
   - component: {fileID: 7684339821502041132}
   - component: {fileID: 1713346747942802490}
-  - component: {fileID: -8374001696081317668}
-  - component: {fileID: -2616997422802600335}
+  - component: {fileID: 7953301851035466511}
+  - component: {fileID: -2735460190729069295}
   m_Layer: 0
-  m_Name: enemy 1
+  m_Name: enemy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 4068390250358317898, guid: dc0e4b204de35b145ade76a8c1157f4e, type: 3}
-  m_Color: {r: 1, g: 0.6745283, b: 0.751759, a: 1}
+  m_Color: {r: 0.6969731, g: 1, b: 0.6745098, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f85d8d5399ecc46b09c9d5f86bff42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 1
+  _health: 3
   deathEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe8d79ef18ca8d4a9e6bb34f6671074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+  _moveSpeed: 1.8
   _hitDistance: 1.5
   _hitInterval: 2
 --- !u!61 &591580498818280204
@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _colorHoldTime: 0.7
-  _hitColor: {r: 0.93333334, g: 0.24705882, b: 0.23529412, a: 0.99215686}
---- !u!82 &-8374001696081317668
+  _hitColor: {r: 0.93333334, g: 0.46145916, b: 0.2352941, a: 0.99215686}
+--- !u!82 &7953301851035466511
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,7 +237,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 57
+  Priority: 75
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -315,7 +315,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-2616997422802600335
+--- !u!114 &-2735460190729069295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

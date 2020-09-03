@@ -60,7 +60,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.9
+  orthographic size: 2.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -196,6 +196,8 @@ GameObject:
   - component: {fileID: 4205883173166589072}
   - component: {fileID: 4205883173166589073}
   - component: {fileID: 4205883173166589074}
+  - component: {fileID: 312636548}
+  - component: {fileID: 312636549}
   m_Layer: 8
   m_Name: player
   m_TagString: Player
@@ -331,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f85d8d5399ecc46b09c9d5f86bff42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 1
+  _health: 20
   deathEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -383,3 +385,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &312636548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205883173166589290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94870b3fb14163f41b21169bddc790dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deathParticlePrefab: {fileID: 4374853236238657037, guid: f715d860b1077db448bb21c7894e06c2, type: 3}
+  _hitParticlePrefab: {fileID: 4374853236238657037, guid: f715d860b1077db448bb21c7894e06c2, type: 3}
+--- !u!114 &312636549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205883173166589290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6021cebbe13fe9743994b1f40760ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorHoldTime: 0.6
+  _hitColor: {r: 0.8117647, g: 0.43529412, b: 0.35686275, a: 1}

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-
+//THIS WHOLE COMPONENT IS A BIG BODGE
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     [Header("GameOver")]
     [SerializeField] private TextMeshProUGUI _scoreText;
     [SerializeField] private TextMeshProUGUI _highScoreText;
+    [Header("spawner")]
+    [SerializeField] private int _unlockScore = 20;
+    [SerializeField] private Spawner _spawner;
 
     void Start()
     {
@@ -65,6 +68,11 @@ public class GameManager : MonoBehaviour
     }
     public void PlayerHit()
     {
+        if(_score > _unlockScore)
+        {
+            _spawner.EnemiesUnlocked++;
+            _unlockScore = int.MaxValue;
+        }
         Debug.Log("Player hit");
     }
 }

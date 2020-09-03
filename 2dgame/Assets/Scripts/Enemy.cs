@@ -14,13 +14,11 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float _hitInterval = 2f;
 
-    [SerializeField]
-    private GameObject _deathParticlePrefab;
-
-    private Health _playerHealth;
+    private Health _プレーヤー健康;
     private Health _health;
     private Rigidbody2D _rb;
     private float _hitTime;
+    
     void Start()
     {
         _health = GetComponent<Health>();
@@ -29,8 +27,8 @@ public class Enemy : MonoBehaviour
 
         _rb = GetComponent<Rigidbody2D>();
 
-        _playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
-        if(!_playerHealth)
+        _プレーヤー健康 = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+        if(!_プレーヤー健康)
             Debug.LogError("No player with tag \"Player\" found");
 
     }
@@ -44,16 +42,14 @@ public class Enemy : MonoBehaviour
     }
     private void Hit()
     {
-        var particle = Instantiate(_deathParticlePrefab, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
-        Destroy(particle.gameObject, particle.main.duration);
     }
 
     void FixedUpdate()
     {
-        if(_playerHealth)
+        if(_プレーヤー健康)
         {    
             //_rb.velocity = Vector2.zero;
-            var diff = (_playerHealth.transform.position - transform.position);
+            var diff = (_プレーヤー健康.transform.position - transform.position);
             if(_hitDistance < diff.magnitude)
             {    
                 var dir = (Vector2)diff.normalized;
@@ -63,7 +59,7 @@ public class Enemy : MonoBehaviour
             {
                 if(_hitTime < Time.time)
                 {
-                    _playerHealth.Damage();
+                    _プレーヤー健康.Damage();
                     _hitTime = Time.time + _hitInterval;
                 }
             }

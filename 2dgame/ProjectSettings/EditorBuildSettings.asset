@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/damageTest 1.unity
-    guid: 26fc396f1951bbf4aa9a0faf4d334d34
+    path: Assets/Scenes/main/Menu.unity
+    guid: d93e8ec978de63944b922f99c5194951
+  - enabled: 1
+    path: Assets/Scenes/main/Casual.unity
+    guid: cbad996eaa5563147afd811cf48a8679
+  - enabled: 1
+    path: Assets/Scenes/main/SuddenDeath.unity
+    guid: da6dd460fe23b634683fb8cddbaedd29
   m_configObjects: {}
